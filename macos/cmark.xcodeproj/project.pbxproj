@@ -1,0 +1,2409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2A907DEAD02143C3A87EDC11 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 318AE6B240C24A0BBF924AA1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0ECB79762F8B45E586220BB6 /* CMake Rules */,
+			);
+			dependencies = (
+				C2F9B919C76349CB9496CE01 /* PBXTargetDependency */,
+				DF08A7F803DB4348A01C9363 /* PBXTargetDependency */,
+				4BF513C604CA4C85B5C0A159 /* PBXTargetDependency */,
+				1F7201129F7F4828B0879FB2 /* PBXTargetDependency */,
+				61121E3DE65E4E93A50303BD /* PBXTargetDependency */,
+				10C722F99B0244689F4AA42F /* PBXTargetDependency */,
+				E14766D930524FE689BC185D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E869CD91A73A4ACEB46C984F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6B6BC2F0F4A54D84ACA3D672 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C7B8890384C540B2A4189548 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		F0D9BBD2722D48369F04B33A /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3DC5E7ABE1A94A0B83157345 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				F2B2A3C885054557A667CA5E /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		F7B1E9CCD43447BA8C638713 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D1E55D66673D44169FAA872D /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				B7D691BF212F4E248D9F3592 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				24B3BEA9481C4F6B99A7DC2C /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02919C33003C48A8A1EF4359 /* /Users/jfpoole/Projects/cmark/src/plugin.c */ = {isa = PBXBuildFile; fileRef = BD93057A2A8C481798365752 /* /Users/jfpoole/Projects/cmark/src/plugin.c */; };
+		03C15881B1CF4B8CB1ABB07C /* /Users/jfpoole/Projects/cmark/api_test/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1AD29C7F69AD425F98C63B09 /* /Users/jfpoole/Projects/cmark/api_test/CMakeLists.txt */; };
+		06257BB2AC844A1088517C0D /* /Users/jfpoole/Projects/cmark/src/iterator.h */ = {isa = PBXBuildFile; fileRef = CA113D0446584A1EB33C50DD /* /Users/jfpoole/Projects/cmark/src/iterator.h */; };
+		063A7553B71A4441A7F36E29 /* /Users/jfpoole/Projects/cmark/src/scanners.c */ = {isa = PBXBuildFile; fileRef = D426F56DA09142EDB062A392 /* /Users/jfpoole/Projects/cmark/src/scanners.c */; };
+		06D689E1A7724E09A971D31B /* /Users/jfpoole/Projects/cmark/src/parser.h */ = {isa = PBXBuildFile; fileRef = 34016438AEDC4632AB60C996 /* /Users/jfpoole/Projects/cmark/src/parser.h */; };
+		0CB88D8A252D4AD6B763A1D0 /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */ = {isa = PBXBuildFile; fileRef = 96397C0112BF4748A9915A3B /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */; };
+		0D12F1B9FE9444EEA74AD2E0 /* /Users/jfpoole/Projects/cmark/src/inlines.c */ = {isa = PBXBuildFile; fileRef = B31B661375AF4898AE8F8C49 /* /Users/jfpoole/Projects/cmark/src/inlines.c */; };
+		0D60191412F047558E9EED48 /* /Users/jfpoole/Projects/cmark/api_test/harness.c */ = {isa = PBXBuildFile; fileRef = 9B996B97CA6A48DE92624AE6 /* /Users/jfpoole/Projects/cmark/api_test/harness.c */; };
+		0FEFB91705D141D3AC05D6CF /* /Users/jfpoole/Projects/cmark/src/cmark.c */ = {isa = PBXBuildFile; fileRef = D32EE565FEB545ADA40B886B /* /Users/jfpoole/Projects/cmark/src/cmark.c */; };
+		10C5E42121BA41509B930AD2 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */ = {isa = PBXBuildFile; fileRef = 1E29AFFAC8B64C21BE8ED448 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */; };
+		187E9360B37E446EB56F989B /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */ = {isa = PBXBuildFile; fileRef = 5FFE8A513A204E3AA2A113BF /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */; };
+		1A27C8B9AC464EF7B1D1FB23 /* /Users/jfpoole/Projects/cmark/src/scanners.re */ = {isa = PBXBuildFile; fileRef = 6BE6C2BA1C0E4CA487AD8DE7 /* /Users/jfpoole/Projects/cmark/src/scanners.re */; };
+		1F0349DC7493467D89181290 /* /Users/jfpoole/Projects/cmark/src/blocks.c */ = {isa = PBXBuildFile; fileRef = 3E0675161C0D4CE3B925C57B /* /Users/jfpoole/Projects/cmark/src/blocks.c */; };
+		208D1F4E842A4282B01BBB43 /* /Users/jfpoole/Projects/cmark/src/iterator.h */ = {isa = PBXBuildFile; fileRef = 236AEA7A23104074B8F40638 /* /Users/jfpoole/Projects/cmark/src/iterator.h */; };
+		2436E12C932B4B12A0D57E30 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */ = {isa = PBXBuildFile; fileRef = 7FD7C99C708045EDAAF59D48 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */; };
+		2462E70EF7C74BC1A0A0D12C /* /Users/jfpoole/Projects/cmark/api_test/cplusplus.cpp */ = {isa = PBXBuildFile; fileRef = 2C3D03211E884BD4B76402BC /* /Users/jfpoole/Projects/cmark/api_test/cplusplus.cpp */; };
+		24F3F130E22E4AC58B157C3C /* /Users/jfpoole/Projects/cmark/src/map.c */ = {isa = PBXBuildFile; fileRef = 4A6808D8748D4FC9AF6CA1ED /* /Users/jfpoole/Projects/cmark/src/map.c */; };
+		27A35CDE085E44FFAFC5484F /* /Users/jfpoole/Projects/cmark/src/map.h */ = {isa = PBXBuildFile; fileRef = 7291F39F78E84E989A91F06B /* /Users/jfpoole/Projects/cmark/src/map.h */; };
+		2854697D2E8A49D5AD07DC3F /* /Users/jfpoole/Projects/cmark/src/man.c */ = {isa = PBXBuildFile; fileRef = D69B331166E343C4B6F51D4F /* /Users/jfpoole/Projects/cmark/src/man.c */; };
+		28C71854ACB643E6900A382A /* /Users/jfpoole/Projects/cmark/src/cmark.h */ = {isa = PBXBuildFile; fileRef = 35CD4EE4508E4115B5A6D8D5 /* /Users/jfpoole/Projects/cmark/src/cmark.h */; };
+		2AF17C1013184989834C68A2 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */ = {isa = PBXBuildFile; fileRef = F2462C6FB0E140AE9421A7C3 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */; };
+		2B06697E9B814348826EDC28 /* /Users/jfpoole/Projects/cmark/src/xml.c */ = {isa = PBXBuildFile; fileRef = 528491D27CC0426592DB5CB3 /* /Users/jfpoole/Projects/cmark/src/xml.c */; };
+		2C7BF6D99E4943F68B998115 /* /Users/jfpoole/Projects/cmark/src/parser.h */ = {isa = PBXBuildFile; fileRef = C4B9650AE9BE44B2A5037722 /* /Users/jfpoole/Projects/cmark/src/parser.h */; };
+		36B7ECE584384B25A8CBC65A /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */ = {isa = PBXBuildFile; fileRef = 2AFB10BD6F034196B3D2CD42 /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */; };
+		3A4285CC18DA48DC827DD094 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0C3E714B59B745459BBCDB05 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */; };
+		3B868644CAAF4B2C9C348EB8 /* /Users/jfpoole/Projects/cmark/src/plugin.c */ = {isa = PBXBuildFile; fileRef = 3CB7756DB0254907BF6E90D1 /* /Users/jfpoole/Projects/cmark/src/plugin.c */; };
+		3BAFBEFA64BC40399D6C8164 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D0371199B19460BAABC5523 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */; };
+		3BD828C197144D81933EAD02 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */ = {isa = PBXBuildFile; fileRef = AB7706A046A54DA48E4B612A /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */; };
+		3FD7A89C718C47008F1497C2 /* /Users/jfpoole/Projects/cmark/src/map.h */ = {isa = PBXBuildFile; fileRef = 17317D91E31C4A6FBA7ED9E4 /* /Users/jfpoole/Projects/cmark/src/map.h */; };
+		404E84B5A1A94EF9AFCAFA6E /* /Users/jfpoole/Projects/cmark/src/registry.h */ = {isa = PBXBuildFile; fileRef = 3708011F06924106A6597BA3 /* /Users/jfpoole/Projects/cmark/src/registry.h */; };
+		41C0CD8F733543949A8382FE /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */ = {isa = PBXBuildFile; fileRef = 2BADBF969C1C4C7C975B075A /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */; };
+		4212E1FABEAA436AB5BA81A0 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */ = {isa = PBXBuildFile; fileRef = AC696BF8A50944A191CEFAE9 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */; };
+		46A0A703C4C947BD803DD54C /* /Users/jfpoole/Projects/cmark/src/latex.c */ = {isa = PBXBuildFile; fileRef = 6BCAAA92434C4F408E23AD43 /* /Users/jfpoole/Projects/cmark/src/latex.c */; };
+		4867BEC9930B4074BDEAC6DC /* /Users/jfpoole/Projects/cmark/src/cmark.h */ = {isa = PBXBuildFile; fileRef = BFBBF4848D7B4CA6B20A46B7 /* /Users/jfpoole/Projects/cmark/src/cmark.h */; };
+		496972135B6841258C519ABA /* /Users/jfpoole/Projects/cmark/src/buffer.h */ = {isa = PBXBuildFile; fileRef = 77BC633D7C9E44D58B19D3FC /* /Users/jfpoole/Projects/cmark/src/buffer.h */; };
+		4B599A04641C4527B75B4257 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */ = {isa = PBXBuildFile; fileRef = 16FCC5A62D1745E987ABF483 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */; };
+		4B7189C2870D4D0F96D4A1B3 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */ = {isa = PBXBuildFile; fileRef = 4383F3DF454C4EE79DB123FE /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */; };
+		4DD0E0124C7144CEB1A2BB42 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 52694A47DD274A8690B826F8 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */; };
+		50508DDBA1AD4A6DBB1E504D /* /Users/jfpoole/Projects/cmark/src/scanners.h */ = {isa = PBXBuildFile; fileRef = 17DE47A4469E4D88B9EC27E2 /* /Users/jfpoole/Projects/cmark/src/scanners.h */; };
+		54B3BC1B86374EE4886694AA /* /Users/jfpoole/Projects/cmark/src/plugin.h */ = {isa = PBXBuildFile; fileRef = C2256DD135A3490FB4508359 /* /Users/jfpoole/Projects/cmark/src/plugin.h */; };
+		56446300483F4744B7A432B2 /* /Users/jfpoole/Projects/cmark/src/blocks.c */ = {isa = PBXBuildFile; fileRef = 1E911BD3D7FA41C990A322D7 /* /Users/jfpoole/Projects/cmark/src/blocks.c */; };
+		57EED1AD361645B98C9B0D5F /* /Users/jfpoole/Projects/cmark/src/utf8.c */ = {isa = PBXBuildFile; fileRef = AFD4A55793CC4C0DAD4E9762 /* /Users/jfpoole/Projects/cmark/src/utf8.c */; };
+		596EEBF03C2C472B8E5436FA /* /Users/jfpoole/Projects/cmark/src/chunk.h */ = {isa = PBXBuildFile; fileRef = 2604021A7E4E4A5E8289DA7F /* /Users/jfpoole/Projects/cmark/src/chunk.h */; };
+		59AA6469361841B5808C3872 /* /Users/jfpoole/Projects/cmark/src/inlines.c */ = {isa = PBXBuildFile; fileRef = B00B1FDE1AD9435AB5F69485 /* /Users/jfpoole/Projects/cmark/src/inlines.c */; };
+		5B7C4365E8654F3F9E802C00 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */ = {isa = PBXBuildFile; fileRef = 4A586C100381443287FE2004 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */; };
+		5E0CC96A29764197B44ED243 /* /Users/jfpoole/Projects/cmark/src/cmark.c */ = {isa = PBXBuildFile; fileRef = CCC8E22B9DAC46128E957796 /* /Users/jfpoole/Projects/cmark/src/cmark.c */; };
+		66BE57E1DCFD473BB3E4201D /* /Users/jfpoole/Projects/cmark/src/node.c */ = {isa = PBXBuildFile; fileRef = B7D97DF7362641E081995E7C /* /Users/jfpoole/Projects/cmark/src/node.c */; };
+		68F28119DACE4DA1922ED06A /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */ = {isa = PBXBuildFile; fileRef = 48B18C05E18441A487CAD818 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */; };
+		69B1A40B233C4608AC2DCA21 /* /Users/jfpoole/Projects/cmark/api_test/harness.h */ = {isa = PBXBuildFile; fileRef = 80999C3A269F4A46B0E2DC83 /* /Users/jfpoole/Projects/cmark/api_test/harness.h */; };
+		6C86D4F016AD48CBB7DFABB3 /* /Users/jfpoole/Projects/cmark/src/references.c */ = {isa = PBXBuildFile; fileRef = 16C9BBC74BA1458E926956BE /* /Users/jfpoole/Projects/cmark/src/references.c */; };
+		6D40E84CB58543C39F0CFB66 /* /Users/jfpoole/Projects/cmark/src/man.c */ = {isa = PBXBuildFile; fileRef = B11F49AE265C44FCA5572E39 /* /Users/jfpoole/Projects/cmark/src/man.c */; };
+		6F296C91868D4861B0797322 /* /Users/jfpoole/Projects/cmark/src/scanners.re */ = {isa = PBXBuildFile; fileRef = C094D7AA98BC434B9D019DA2 /* /Users/jfpoole/Projects/cmark/src/scanners.re */; };
+		72EF25E72E004D8785191A8E /* /Users/jfpoole/Projects/cmark/src/utf8.h */ = {isa = PBXBuildFile; fileRef = 5AFAE42F5C5C46CA8C8B994E /* /Users/jfpoole/Projects/cmark/src/utf8.h */; };
+		7508FB173B7542129471A0BA /* /Users/jfpoole/Projects/cmark/src/main.c */ = {isa = PBXBuildFile; fileRef = 789D24374DC84EF2A5D37215 /* /Users/jfpoole/Projects/cmark/src/main.c */; };
+		78105E020BB449F283ECA5D4 /* /Users/jfpoole/Projects/cmark/src/registry.h */ = {isa = PBXBuildFile; fileRef = 83AB3C75EB694A2BA442E00E /* /Users/jfpoole/Projects/cmark/src/registry.h */; };
+		7A5F0A9B5C274EBF8211B230 /* /Users/jfpoole/Projects/cmark/src/map.c */ = {isa = PBXBuildFile; fileRef = 7FEB593E1E3947429D12F66D /* /Users/jfpoole/Projects/cmark/src/map.c */; };
+		7AC6476604C7489FB6BF3434 /* /Users/jfpoole/Projects/cmark/src/chunk.h */ = {isa = PBXBuildFile; fileRef = 87E270BDD1BB424886AD0B3A /* /Users/jfpoole/Projects/cmark/src/chunk.h */; };
+		7B09005820044302BF7AE680 /* /Users/jfpoole/Projects/cmark/src/buffer.c */ = {isa = PBXBuildFile; fileRef = 6492132496E04BCC9EFA8D23 /* /Users/jfpoole/Projects/cmark/src/buffer.c */; };
+		7BAC23777A4E45489E7B0D7D /* /Users/jfpoole/Projects/cmark/src/linked_list.c */ = {isa = PBXBuildFile; fileRef = 9AD55FB2A3ED44C4B12B0D11 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */; };
+		7E32683DC0C74C0F97ADB546 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */ = {isa = PBXBuildFile; fileRef = 1F2A27A7CCC34C978B93264E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */; };
+		809BD4931ABB4024AC61FF23 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */ = {isa = PBXBuildFile; fileRef = AAFC0C81D5A34BCD86416200 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */; };
+		81A4F2B62B224505BFDA51B6 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */ = {isa = PBXBuildFile; fileRef = 12E5A12AAD54481C98C7F37E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */; };
+		855706F85AB54570B37D722A /* /Users/jfpoole/Projects/cmark/src/linked_list.c */ = {isa = PBXBuildFile; fileRef = 81D29655C70241D78172BB37 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */; };
+		85A2FD3DED544EBF8E5D76C9 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */ = {isa = PBXBuildFile; fileRef = 5EAC5700A93A4FC588A6C58C /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */; };
+		86FF3F33F6C0416BA004DF3A /* /Users/jfpoole/Projects/cmark/src/inlines.h */ = {isa = PBXBuildFile; fileRef = 465927A4A2134A578DFCB2A2 /* /Users/jfpoole/Projects/cmark/src/inlines.h */; };
+		8A7A3E057EF940A7B6D34AD8 /* /Users/jfpoole/Projects/cmark/src/plugin.h */ = {isa = PBXBuildFile; fileRef = FDC81B7CEC364128A5FA95B5 /* /Users/jfpoole/Projects/cmark/src/plugin.h */; };
+		9005B2CD70AD406C8C6AAA0E /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */ = {isa = PBXBuildFile; fileRef = CB8D1FD982534F9F9DD2CF38 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */; };
+		905F01EFC14D444D8C0526CD /* /Users/jfpoole/Projects/cmark/src/plaintext.c */ = {isa = PBXBuildFile; fileRef = 633C29EDF7644309AA5707A6 /* /Users/jfpoole/Projects/cmark/src/plaintext.c */; };
+		93A08688C0EE4320A63D34D0 /* /Users/jfpoole/Projects/cmark/src/iterator.c */ = {isa = PBXBuildFile; fileRef = C24662246970463D92E76694 /* /Users/jfpoole/Projects/cmark/src/iterator.c */; };
+		97DB609EB968457FB215865A /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */ = {isa = PBXBuildFile; fileRef = EC61E659664A491D8CD00990 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */; };
+		995FE8D9351F4AD7B0DDA54B /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DCD6540DF89B41B8BF7E0BBA /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */; };
+		9B18F0F7CD054C8786F59DF8 /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */ = {isa = PBXBuildFile; fileRef = 5C4C05E5375E4D95BE27A62C /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */; };
+		9BA45B488C0B425E9B9F14F6 /* /Users/jfpoole/Projects/cmark/src/buffer.h */ = {isa = PBXBuildFile; fileRef = FEE0598E1D944F11AF172EEC /* /Users/jfpoole/Projects/cmark/src/buffer.h */; };
+		9BAB1CBC2D8C40EF8F383E5D /* /Users/jfpoole/Projects/cmark/src/html.c */ = {isa = PBXBuildFile; fileRef = D3FC1EC804504AC6B01641EC /* /Users/jfpoole/Projects/cmark/src/html.c */; };
+		9E5162B388A349B6BF22C055 /* /Users/jfpoole/Projects/cmark/src/registry.c */ = {isa = PBXBuildFile; fileRef = 89353E30DCB14A78AF09A31A /* /Users/jfpoole/Projects/cmark/src/registry.c */; };
+		9EC97F546B504F409DA84D3B /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */ = {isa = PBXBuildFile; fileRef = 04DA1FEDB0EA42CA94256B08 /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */; };
+		9F453A6364FF4ECCAB4D6C6F /* /Users/jfpoole/Projects/cmark/src/node.h */ = {isa = PBXBuildFile; fileRef = B9DBF6CF40CC46CCBCFC0066 /* /Users/jfpoole/Projects/cmark/src/node.h */; };
+		A0BC2DCDB4944E58972027D8 /* /Users/jfpoole/Projects/cmark/src/footnotes.c */ = {isa = PBXBuildFile; fileRef = 8A4AD428625D4EB899AC5707 /* /Users/jfpoole/Projects/cmark/src/footnotes.c */; };
+		A23F85DE3D5C4DB0A6751FEC /* /Users/jfpoole/Projects/cmark/src/utf8.h */ = {isa = PBXBuildFile; fileRef = AF17C14950004596996ED90C /* /Users/jfpoole/Projects/cmark/src/utf8.h */; };
+		A2B94324E6954C2E9EE41BBA /* /Users/jfpoole/Projects/cmark/src/houdini.h */ = {isa = PBXBuildFile; fileRef = CE796FD40A56489E9C04B45E /* /Users/jfpoole/Projects/cmark/src/houdini.h */; };
+		A2BF572F8FCB473EB51AA9EB /* /Users/jfpoole/Projects/cmark/src/render.h */ = {isa = PBXBuildFile; fileRef = C35D53753BB4420E80034601 /* /Users/jfpoole/Projects/cmark/src/render.h */; };
+		AF1AB88DD64B44D1BABF0132 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A130BD3FEFD24EE7B54EB459 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */; };
+		AF6B70491A8E4D9D8AE0FEE5 /* /Users/jfpoole/Projects/cmark/src/references.h */ = {isa = PBXBuildFile; fileRef = 148E7B41973946469FAA67E5 /* /Users/jfpoole/Projects/cmark/src/references.h */; };
+		B065B5713CB240BFB0097EAC /* /Users/jfpoole/Projects/cmark/src/commonmark.c */ = {isa = PBXBuildFile; fileRef = B8A13C75412C4969BE3C3C20 /* /Users/jfpoole/Projects/cmark/src/commonmark.c */; };
+		B458D0B474B149BE880564BE /* /Users/jfpoole/Projects/cmark/extensions/table.c */ = {isa = PBXBuildFile; fileRef = 39A9CBBDF2F344299253A6D5 /* /Users/jfpoole/Projects/cmark/extensions/table.c */; };
+		B8193C88E477476B82A7C248 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */ = {isa = PBXBuildFile; fileRef = E16C29156450473BBBEB8855 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */; };
+		B8A898406C7D44E7BC870A70 /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */ = {isa = PBXBuildFile; fileRef = 8821A5CA4B1F42B2B374802B /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */; };
+		BFFE9EAE84904092B0C0289C /* /Users/jfpoole/Projects/cmark/src/references.c */ = {isa = PBXBuildFile; fileRef = B8BBCCEC4C254481A90E9C35 /* /Users/jfpoole/Projects/cmark/src/references.c */; };
+		C2F70FBC1A2F4060963CC0D4 /* /Users/jfpoole/Projects/cmark/src/render.h */ = {isa = PBXBuildFile; fileRef = 9F5765BA69324E978889C19F /* /Users/jfpoole/Projects/cmark/src/render.h */; };
+		C36A4BBC483449259C25FD58 /* /Users/jfpoole/Projects/cmark/src/scanners.c */ = {isa = PBXBuildFile; fileRef = D9049974BCC841BEADBD5F6C /* /Users/jfpoole/Projects/cmark/src/scanners.c */; };
+		C49E7676374B41848A52F9B6 /* /Users/jfpoole/Projects/cmark/src/render.c */ = {isa = PBXBuildFile; fileRef = 26C02D861AEA4115ABC762C0 /* /Users/jfpoole/Projects/cmark/src/render.c */; };
+		C7EF5B5F46D447C9B868CE1E /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */ = {isa = PBXBuildFile; fileRef = DBB4086160F141D192E85DA8 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */; };
+		CA4473B2614E4A3C8F37C497 /* /Users/jfpoole/Projects/cmark/src/render.c */ = {isa = PBXBuildFile; fileRef = DD05FF5A461D4553A6905991 /* /Users/jfpoole/Projects/cmark/src/render.c */; };
+		CB19200D13CE49FE91D5507C /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */ = {isa = PBXBuildFile; fileRef = ECFFDD5E41664A449006C0C7 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */; };
+		CB61FB7AB7F04995A2DBFE89 /* /Users/jfpoole/Projects/cmark/src/node.h */ = {isa = PBXBuildFile; fileRef = EBC19A9961564258A0EC8072 /* /Users/jfpoole/Projects/cmark/src/node.h */; };
+		CE37CAC243D54683A3AA546E /* /Users/jfpoole/Projects/cmark/src/scanners.h */ = {isa = PBXBuildFile; fileRef = 61A1D20DBEA2437F83C59681 /* /Users/jfpoole/Projects/cmark/src/scanners.h */; };
+		CE99B28ED2464BADBA1FC73B /* /Users/jfpoole/Projects/cmark/src/html.c */ = {isa = PBXBuildFile; fileRef = 2EA22BD4202C46CE9E9B8B03 /* /Users/jfpoole/Projects/cmark/src/html.c */; };
+		CEB781B2C8C24EEC8345BB00 /* /Users/jfpoole/Projects/cmark/src/commonmark.c */ = {isa = PBXBuildFile; fileRef = BA803D4064CB45EFB835734A /* /Users/jfpoole/Projects/cmark/src/commonmark.c */; };
+		CFA8581220234201AA5A041B /* /Users/jfpoole/Projects/cmark/src/footnotes.h */ = {isa = PBXBuildFile; fileRef = 503DC139AEFA48A0A42AAA01 /* /Users/jfpoole/Projects/cmark/src/footnotes.h */; };
+		D170C3DF0FC1400C95B5105A /* /Users/jfpoole/Projects/cmark/src/inlines.h */ = {isa = PBXBuildFile; fileRef = E18C7E56D2224CA8A3722DC9 /* /Users/jfpoole/Projects/cmark/src/inlines.h */; };
+		D2F2928BFDE54859899DCEBE /* /Users/jfpoole/Projects/cmark/extensions/table.c */ = {isa = PBXBuildFile; fileRef = 07D222D52E29422C9A07655C /* /Users/jfpoole/Projects/cmark/extensions/table.c */; };
+		D44EC63959A94DEB8399EC93 /* /Users/jfpoole/Projects/cmark/src/arena.c */ = {isa = PBXBuildFile; fileRef = 0602CAE6AFCD4FFFB942090A /* /Users/jfpoole/Projects/cmark/src/arena.c */; };
+		D9CAA44DB35149A1A8A53677 /* /Users/jfpoole/Projects/cmark/src/plaintext.c */ = {isa = PBXBuildFile; fileRef = 9D4059FB61784365871517AD /* /Users/jfpoole/Projects/cmark/src/plaintext.c */; };
+		DBA222AA0C394FDF9A13C042 /* /Users/jfpoole/Projects/cmark/src/iterator.c */ = {isa = PBXBuildFile; fileRef = 1C5295F8A69E4D82AB09F167 /* /Users/jfpoole/Projects/cmark/src/iterator.c */; };
+		DCF72698E8AF49D58BC80368 /* /Users/jfpoole/Projects/cmark/src/buffer.c */ = {isa = PBXBuildFile; fileRef = B8ECE9DBFF9B444699788FE7 /* /Users/jfpoole/Projects/cmark/src/buffer.c */; };
+		DF26CE14D9E24A49A1FB5814 /* /Users/jfpoole/Projects/cmark/src/utf8.c */ = {isa = PBXBuildFile; fileRef = E898C42EF4D74232B2F48AF1 /* /Users/jfpoole/Projects/cmark/src/utf8.c */; };
+		E45067258F37405B87117CAA /* /Users/jfpoole/Projects/cmark/src/footnotes.c */ = {isa = PBXBuildFile; fileRef = AB5EF30BF4D548D68A778F8C /* /Users/jfpoole/Projects/cmark/src/footnotes.c */; };
+		E52B4057B27A498D8226D9F2 /* /Users/jfpoole/Projects/cmark/src/references.h */ = {isa = PBXBuildFile; fileRef = 9F11EA3F63974B2C9EAF2D5C /* /Users/jfpoole/Projects/cmark/src/references.h */; };
+		E7B2DBA451844AFB8A4988EB /* /Users/jfpoole/Projects/cmark/src/latex.c */ = {isa = PBXBuildFile; fileRef = 2895633D07D14ED481C4A707 /* /Users/jfpoole/Projects/cmark/src/latex.c */; };
+		EAAC30A666EC4DC589B6E718 /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */ = {isa = PBXBuildFile; fileRef = 106344C7FCFC42768781ACED /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */; };
+		EB072646551C4548B9D4CB7B /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */ = {isa = PBXBuildFile; fileRef = 9D2F8A5EAA9C40E5A4B3477F /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */; };
+		EBD4291117704FF3860D87C7 /* /Users/jfpoole/Projects/cmark/src/registry.c */ = {isa = PBXBuildFile; fileRef = 941C92B27737403F8E6776B5 /* /Users/jfpoole/Projects/cmark/src/registry.c */; };
+		F27E56BA693C45D0A900EDD3 /* /Users/jfpoole/Projects/cmark/src/houdini.h */ = {isa = PBXBuildFile; fileRef = 69F78D85D0274B11A3FD12A7 /* /Users/jfpoole/Projects/cmark/src/houdini.h */; };
+		F56CB101B8854BEA9736E6C0 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */ = {isa = PBXBuildFile; fileRef = B3F81480BB5043979D1C63BB /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */; };
+		F573ECB972AB4A58878C7879 /* /Users/jfpoole/Projects/cmark/src/xml.c */ = {isa = PBXBuildFile; fileRef = BF529A18D6F24DCD97A7E86D /* /Users/jfpoole/Projects/cmark/src/xml.c */; };
+		F5F7A935FFE14700A486F3DE /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */ = {isa = PBXBuildFile; fileRef = 0F05190F48B843B49B6DB991 /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */; };
+		F67A1FC1D6E942E397489542 /* /Users/jfpoole/Projects/cmark/api_test/main.c */ = {isa = PBXBuildFile; fileRef = 9891D3362BB343E0ADEF18FA /* /Users/jfpoole/Projects/cmark/api_test/main.c */; };
+		F8E786ABF4E3446FB67CB0B2 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */ = {isa = PBXBuildFile; fileRef = D8746594682F463F8DC98DF0 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */; };
+		FE2B493DC9A84A6E8D6B7C0C /* /Users/jfpoole/Projects/cmark/src/footnotes.h */ = {isa = PBXBuildFile; fileRef = 3DC494FB7FFC4E4FBF743CCD /* /Users/jfpoole/Projects/cmark/src/footnotes.h */; };
+		FE502193C4F54D93820F999C /* /Users/jfpoole/Projects/cmark/src/node.c */ = {isa = PBXBuildFile; fileRef = 89A231C5C2434FABAD743C30 /* /Users/jfpoole/Projects/cmark/src/node.c */; };
+		FE92C163D8124B72A9674E09 /* /Users/jfpoole/Projects/cmark/src/arena.c */ = {isa = PBXBuildFile; fileRef = EDA5E9AB0DB34DACA240D976 /* /Users/jfpoole/Projects/cmark/src/arena.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1129B76D362342098E1245D0 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		653D91F24B994E65BBCC53C7 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		BB01D42DDC6540A3A871F999 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		FA5856E7BB594D1795438C29 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		031990B13632486695500948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DA973286394349A62F2727;
+			remoteInfo = "libcmark-gfm_static";
+		};
+		065CD844CD104C1F928A636F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 895F3A33545740F9894B6D5C;
+			remoteInfo = api_test;
+		};
+		14F6B6099DF247A2A1AB7CC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		1F202F2F38294622A0A02BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EDA32DE486476BAD3B6F95;
+			remoteInfo = "cmark-gfm";
+		};
+		42BCA43AD58B4CBD9D95D66B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D15D026EA1B4566AA670CDC;
+			remoteInfo = "libcmark-gfmextensions";
+		};
+		48FE36E35D834F62A55E8B95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		532EEDD955E442F2857589D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC407E4191F45B1B855DBE1;
+			remoteInfo = "libcmark-gfm";
+		};
+		6D30C46FDCE24F33B7B2656E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A907DEAD02143C3A87EDC11;
+			remoteInfo = ALL_BUILD;
+		};
+		73FF5746CC374DBC835FDE3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC407E4191F45B1B855DBE1;
+			remoteInfo = "libcmark-gfm";
+		};
+		961498C03CE5434682C10B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		9B18918CA68542F7A56BC6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		9C3A2104392540A887EE5F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		9EE85C6532E14C84BE317AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D15D026EA1B4566AA670CDC;
+			remoteInfo = "libcmark-gfmextensions";
+		};
+		BA3F4DF0E043408E8DB6B6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		D242E9DBA3AD4AA6B84AA35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D6C96B75AEE4B6CA7C41761;
+			remoteInfo = "libcmark-gfmextensions_static";
+		};
+		D8C75CB75863467B853CD0F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E869CD91A73A4ACEB46C984F;
+			remoteInfo = ZERO_CHECK;
+		};
+		DC9F6B199E4F43E696FFB549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC407E4191F45B1B855DBE1;
+			remoteInfo = "libcmark-gfm";
+		};
+		EC90FC4F359C49AF8B0F4244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC407E4191F45B1B855DBE1;
+			remoteInfo = "libcmark-gfm";
+		};
+		FC9C8C81F8684C4788F1F1E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25B7871B739477B85FD6B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D15D026EA1B4566AA670CDC;
+			remoteInfo = "libcmark-gfmextensions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DA1FEDB0EA42CA94256B08 /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "core-extensions.c"; path = "extensions/core-extensions.c"; sourceTree = SOURCE_ROOT; };
+		0602CAE6AFCD4FFFB942090A /* /Users/jfpoole/Projects/cmark/src/arena.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = arena.c; path = src/arena.c; sourceTree = SOURCE_ROOT; };
+		07D222D52E29422C9A07655C /* /Users/jfpoole/Projects/cmark/extensions/table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = table.c; path = extensions/table.c; sourceTree = SOURCE_ROOT; };
+		0AE09FA4724247ACA3546E2F /* libcmark-gfmextensions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libcmark-gfmextensions.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3E714B59B745459BBCDB05 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0F05190F48B843B49B6DB991 /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark_extension_api.h; path = src/cmark_extension_api.h; sourceTree = SOURCE_ROOT; };
+		106344C7FCFC42768781ACED /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tagfilter.c; path = extensions/tagfilter.c; sourceTree = SOURCE_ROOT; };
+		12E5A12AAD54481C98C7F37E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = syntax_extension.h; path = src/syntax_extension.h; sourceTree = SOURCE_ROOT; };
+		148E7B41973946469FAA67E5 /* /Users/jfpoole/Projects/cmark/src/references.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = references.h; path = src/references.h; sourceTree = SOURCE_ROOT; };
+		16C9BBC74BA1458E926956BE /* /Users/jfpoole/Projects/cmark/src/references.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = references.c; path = src/references.c; sourceTree = SOURCE_ROOT; };
+		16FCC5A62D1745E987ABF483 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = autolink.c; path = extensions/autolink.c; sourceTree = SOURCE_ROOT; };
+		17317D91E31C4A6FBA7ED9E4 /* /Users/jfpoole/Projects/cmark/src/map.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map.h; path = src/map.h; sourceTree = SOURCE_ROOT; };
+		17DE47A4469E4D88B9EC27E2 /* /Users/jfpoole/Projects/cmark/src/scanners.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanners.h; path = src/scanners.h; sourceTree = SOURCE_ROOT; };
+		1AD29C7F69AD425F98C63B09 /* /Users/jfpoole/Projects/cmark/api_test/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = api_test/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1C5295F8A69E4D82AB09F167 /* /Users/jfpoole/Projects/cmark/src/iterator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = iterator.c; path = src/iterator.c; sourceTree = SOURCE_ROOT; };
+		1D0371199B19460BAABC5523 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = extensions/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1E29AFFAC8B64C21BE8ED448 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_html_u.c; path = src/houdini_html_u.c; sourceTree = SOURCE_ROOT; };
+		1E911BD3D7FA41C990A322D7 /* /Users/jfpoole/Projects/cmark/src/blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blocks.c; path = src/blocks.c; sourceTree = SOURCE_ROOT; };
+		1F2A27A7CCC34C978B93264E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = syntax_extension.c; path = src/syntax_extension.c; sourceTree = SOURCE_ROOT; };
+		236AEA7A23104074B8F40638 /* /Users/jfpoole/Projects/cmark/src/iterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iterator.h; path = src/iterator.h; sourceTree = SOURCE_ROOT; };
+		2604021A7E4E4A5E8289DA7F /* /Users/jfpoole/Projects/cmark/src/chunk.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chunk.h; path = src/chunk.h; sourceTree = SOURCE_ROOT; };
+		26C02D861AEA4115ABC762C0 /* /Users/jfpoole/Projects/cmark/src/render.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = render.c; path = src/render.c; sourceTree = SOURCE_ROOT; };
+		2895633D07D14ED481C4A707 /* /Users/jfpoole/Projects/cmark/src/latex.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = latex.c; path = src/latex.c; sourceTree = SOURCE_ROOT; };
+		2AFB10BD6F034196B3D2CD42 /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strikethrough.c; path = extensions/strikethrough.c; sourceTree = SOURCE_ROOT; };
+		2BADBF969C1C4C7C975B075A /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tagfilter.c; path = extensions/tagfilter.c; sourceTree = SOURCE_ROOT; };
+		2C3D03211E884BD4B76402BC /* /Users/jfpoole/Projects/cmark/api_test/cplusplus.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cplusplus.cpp; path = api_test/cplusplus.cpp; sourceTree = SOURCE_ROOT; };
+		2EA22BD4202C46CE9E9B8B03 /* /Users/jfpoole/Projects/cmark/src/html.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = html.c; path = src/html.c; sourceTree = SOURCE_ROOT; };
+		34016438AEDC4632AB60C996 /* /Users/jfpoole/Projects/cmark/src/parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = parser.h; path = src/parser.h; sourceTree = SOURCE_ROOT; };
+		35CD4EE4508E4115B5A6D8D5 /* /Users/jfpoole/Projects/cmark/src/cmark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark.h; path = src/cmark.h; sourceTree = SOURCE_ROOT; };
+		3708011F06924106A6597BA3 /* /Users/jfpoole/Projects/cmark/src/registry.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = registry.h; path = src/registry.h; sourceTree = SOURCE_ROOT; };
+		39A9CBBDF2F344299253A6D5 /* /Users/jfpoole/Projects/cmark/extensions/table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = table.c; path = extensions/table.c; sourceTree = SOURCE_ROOT; };
+		3CB7756DB0254907BF6E90D1 /* /Users/jfpoole/Projects/cmark/src/plugin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = plugin.c; path = src/plugin.c; sourceTree = SOURCE_ROOT; };
+		3DC494FB7FFC4E4FBF743CCD /* /Users/jfpoole/Projects/cmark/src/footnotes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = footnotes.h; path = src/footnotes.h; sourceTree = SOURCE_ROOT; };
+		3E0675161C0D4CE3B925C57B /* /Users/jfpoole/Projects/cmark/src/blocks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blocks.c; path = src/blocks.c; sourceTree = SOURCE_ROOT; };
+		4383F3DF454C4EE79DB123FE /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ext_scanners.h; path = extensions/ext_scanners.h; sourceTree = SOURCE_ROOT; };
+		465927A4A2134A578DFCB2A2 /* /Users/jfpoole/Projects/cmark/src/inlines.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = inlines.h; path = src/inlines.h; sourceTree = SOURCE_ROOT; };
+		48B18C05E18441A487CAD818 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmark_ctype.c; path = src/cmark_ctype.c; sourceTree = SOURCE_ROOT; };
+		4A586C100381443287FE2004 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ext_scanners.c; path = extensions/ext_scanners.c; sourceTree = SOURCE_ROOT; };
+		4A6808D8748D4FC9AF6CA1ED /* /Users/jfpoole/Projects/cmark/src/map.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = map.c; path = src/map.c; sourceTree = SOURCE_ROOT; };
+		503DC139AEFA48A0A42AAA01 /* /Users/jfpoole/Projects/cmark/src/footnotes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = footnotes.h; path = src/footnotes.h; sourceTree = SOURCE_ROOT; };
+		52694A47DD274A8690B826F8 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		528491D27CC0426592DB5CB3 /* /Users/jfpoole/Projects/cmark/src/xml.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xml.c; path = src/xml.c; sourceTree = SOURCE_ROOT; };
+		5AFAE42F5C5C46CA8C8B994E /* /Users/jfpoole/Projects/cmark/src/utf8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utf8.h; path = src/utf8.h; sourceTree = SOURCE_ROOT; };
+		5C4C05E5375E4D95BE27A62C /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strikethrough.c; path = extensions/strikethrough.c; sourceTree = SOURCE_ROOT; };
+		5EAC5700A93A4FC588A6C58C /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = autolink.c; path = extensions/autolink.c; sourceTree = SOURCE_ROOT; };
+		5FFE8A513A204E3AA2A113BF /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark_ctype.h; path = src/cmark_ctype.h; sourceTree = SOURCE_ROOT; };
+		61A1D20DBEA2437F83C59681 /* /Users/jfpoole/Projects/cmark/src/scanners.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanners.h; path = src/scanners.h; sourceTree = SOURCE_ROOT; };
+		633C29EDF7644309AA5707A6 /* /Users/jfpoole/Projects/cmark/src/plaintext.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = plaintext.c; path = src/plaintext.c; sourceTree = SOURCE_ROOT; };
+		6492132496E04BCC9EFA8D23 /* /Users/jfpoole/Projects/cmark/src/buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = buffer.c; path = src/buffer.c; sourceTree = SOURCE_ROOT; };
+		69F78D85D0274B11A3FD12A7 /* /Users/jfpoole/Projects/cmark/src/houdini.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = houdini.h; path = src/houdini.h; sourceTree = SOURCE_ROOT; };
+		6BCAAA92434C4F408E23AD43 /* /Users/jfpoole/Projects/cmark/src/latex.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = latex.c; path = src/latex.c; sourceTree = SOURCE_ROOT; };
+		6BE6C2BA1C0E4CA487AD8DE7 /* /Users/jfpoole/Projects/cmark/src/scanners.re */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = scanners.re; path = src/scanners.re; sourceTree = SOURCE_ROOT; };
+		7291F39F78E84E989A91F06B /* /Users/jfpoole/Projects/cmark/src/map.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = map.h; path = src/map.h; sourceTree = SOURCE_ROOT; };
+		748818522BA64F0589B0413F /* /Users/jfpoole/Projects/cmark/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		77BC633D7C9E44D58B19D3FC /* /Users/jfpoole/Projects/cmark/src/buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffer.h; path = src/buffer.h; sourceTree = SOURCE_ROOT; };
+		789D24374DC84EF2A5D37215 /* /Users/jfpoole/Projects/cmark/src/main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = src/main.c; sourceTree = SOURCE_ROOT; };
+		7FD7C99C708045EDAAF59D48 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ext_scanners.re; path = extensions/ext_scanners.re; sourceTree = SOURCE_ROOT; };
+		7FEB593E1E3947429D12F66D /* /Users/jfpoole/Projects/cmark/src/map.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = map.c; path = src/map.c; sourceTree = SOURCE_ROOT; };
+		80999C3A269F4A46B0E2DC83 /* /Users/jfpoole/Projects/cmark/api_test/harness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = harness.h; path = api_test/harness.h; sourceTree = SOURCE_ROOT; };
+		81D29655C70241D78172BB37 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = linked_list.c; path = src/linked_list.c; sourceTree = SOURCE_ROOT; };
+		83AB3C75EB694A2BA442E00E /* /Users/jfpoole/Projects/cmark/src/registry.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = registry.h; path = src/registry.h; sourceTree = SOURCE_ROOT; };
+		87E270BDD1BB424886AD0B3A /* /Users/jfpoole/Projects/cmark/src/chunk.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = chunk.h; path = src/chunk.h; sourceTree = SOURCE_ROOT; };
+		8821A5CA4B1F42B2B374802B /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark_extension_api.h; path = src/cmark_extension_api.h; sourceTree = SOURCE_ROOT; };
+		89353E30DCB14A78AF09A31A /* /Users/jfpoole/Projects/cmark/src/registry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = registry.c; path = src/registry.c; sourceTree = SOURCE_ROOT; };
+		89A231C5C2434FABAD743C30 /* /Users/jfpoole/Projects/cmark/src/node.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = node.c; path = src/node.c; sourceTree = SOURCE_ROOT; };
+		8A4AD428625D4EB899AC5707 /* /Users/jfpoole/Projects/cmark/src/footnotes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = footnotes.c; path = src/footnotes.c; sourceTree = SOURCE_ROOT; };
+		941C92B27737403F8E6776B5 /* /Users/jfpoole/Projects/cmark/src/registry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = registry.c; path = src/registry.c; sourceTree = SOURCE_ROOT; };
+		96397C0112BF4748A9915A3B /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "core-extensions.c"; path = "extensions/core-extensions.c"; sourceTree = SOURCE_ROOT; };
+		9891D3362BB343E0ADEF18FA /* /Users/jfpoole/Projects/cmark/api_test/main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = api_test/main.c; sourceTree = SOURCE_ROOT; };
+		9AD55FB2A3ED44C4B12B0D11 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = linked_list.c; path = src/linked_list.c; sourceTree = SOURCE_ROOT; };
+		9B996B97CA6A48DE92624AE6 /* /Users/jfpoole/Projects/cmark/api_test/harness.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = harness.c; path = api_test/harness.c; sourceTree = SOURCE_ROOT; };
+		9D2F8A5EAA9C40E5A4B3477F /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ext_scanners.h; path = extensions/ext_scanners.h; sourceTree = SOURCE_ROOT; };
+		9D4059FB61784365871517AD /* /Users/jfpoole/Projects/cmark/src/plaintext.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = plaintext.c; path = src/plaintext.c; sourceTree = SOURCE_ROOT; };
+		9F11EA3F63974B2C9EAF2D5C /* /Users/jfpoole/Projects/cmark/src/references.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = references.h; path = src/references.h; sourceTree = SOURCE_ROOT; };
+		9F5765BA69324E978889C19F /* /Users/jfpoole/Projects/cmark/src/render.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = render.h; path = src/render.h; sourceTree = SOURCE_ROOT; };
+		A130BD3FEFD24EE7B54EB459 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = extensions/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AAFC0C81D5A34BCD86416200 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_html_e.c; path = src/houdini_html_e.c; sourceTree = SOURCE_ROOT; };
+		AB5EF30BF4D548D68A778F8C /* /Users/jfpoole/Projects/cmark/src/footnotes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = footnotes.c; path = src/footnotes.c; sourceTree = SOURCE_ROOT; };
+		AB7706A046A54DA48E4B612A /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_html_e.c; path = src/houdini_html_e.c; sourceTree = SOURCE_ROOT; };
+		AC696BF8A50944A191CEFAE9 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_href_e.c; path = src/houdini_href_e.c; sourceTree = SOURCE_ROOT; };
+		AF17C14950004596996ED90C /* /Users/jfpoole/Projects/cmark/src/utf8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utf8.h; path = src/utf8.h; sourceTree = SOURCE_ROOT; };
+		AFD4A55793CC4C0DAD4E9762 /* /Users/jfpoole/Projects/cmark/src/utf8.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = utf8.c; path = src/utf8.c; sourceTree = SOURCE_ROOT; };
+		B00B1FDE1AD9435AB5F69485 /* /Users/jfpoole/Projects/cmark/src/inlines.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inlines.c; path = src/inlines.c; sourceTree = SOURCE_ROOT; };
+		B11F49AE265C44FCA5572E39 /* /Users/jfpoole/Projects/cmark/src/man.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = man.c; path = src/man.c; sourceTree = SOURCE_ROOT; };
+		B31B661375AF4898AE8F8C49 /* /Users/jfpoole/Projects/cmark/src/inlines.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = inlines.c; path = src/inlines.c; sourceTree = SOURCE_ROOT; };
+		B3F81480BB5043979D1C63BB /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ext_scanners.c; path = extensions/ext_scanners.c; sourceTree = SOURCE_ROOT; };
+		B7D97DF7362641E081995E7C /* /Users/jfpoole/Projects/cmark/src/node.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = node.c; path = src/node.c; sourceTree = SOURCE_ROOT; };
+		B8A13C75412C4969BE3C3C20 /* /Users/jfpoole/Projects/cmark/src/commonmark.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = commonmark.c; path = src/commonmark.c; sourceTree = SOURCE_ROOT; };
+		B8BBCCEC4C254481A90E9C35 /* /Users/jfpoole/Projects/cmark/src/references.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = references.c; path = src/references.c; sourceTree = SOURCE_ROOT; };
+		B8ECE9DBFF9B444699788FE7 /* /Users/jfpoole/Projects/cmark/src/buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = buffer.c; path = src/buffer.c; sourceTree = SOURCE_ROOT; };
+		B9DBF6CF40CC46CCBCFC0066 /* /Users/jfpoole/Projects/cmark/src/node.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node.h; path = src/node.h; sourceTree = SOURCE_ROOT; };
+		BA803D4064CB45EFB835734A /* /Users/jfpoole/Projects/cmark/src/commonmark.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = commonmark.c; path = src/commonmark.c; sourceTree = SOURCE_ROOT; };
+		BD93057A2A8C481798365752 /* /Users/jfpoole/Projects/cmark/src/plugin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = plugin.c; path = src/plugin.c; sourceTree = SOURCE_ROOT; };
+		BF529A18D6F24DCD97A7E86D /* /Users/jfpoole/Projects/cmark/src/xml.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xml.c; path = src/xml.c; sourceTree = SOURCE_ROOT; };
+		BFBBF4848D7B4CA6B20A46B7 /* /Users/jfpoole/Projects/cmark/src/cmark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark.h; path = src/cmark.h; sourceTree = SOURCE_ROOT; };
+		C094D7AA98BC434B9D019DA2 /* /Users/jfpoole/Projects/cmark/src/scanners.re */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = scanners.re; path = src/scanners.re; sourceTree = SOURCE_ROOT; };
+		C2256DD135A3490FB4508359 /* /Users/jfpoole/Projects/cmark/src/plugin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = plugin.h; path = src/plugin.h; sourceTree = SOURCE_ROOT; };
+		C24662246970463D92E76694 /* /Users/jfpoole/Projects/cmark/src/iterator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = iterator.c; path = src/iterator.c; sourceTree = SOURCE_ROOT; };
+		C35D53753BB4420E80034601 /* /Users/jfpoole/Projects/cmark/src/render.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = render.h; path = src/render.h; sourceTree = SOURCE_ROOT; };
+		C4B9650AE9BE44B2A5037722 /* /Users/jfpoole/Projects/cmark/src/parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = parser.h; path = src/parser.h; sourceTree = SOURCE_ROOT; };
+		C7D9FA5883E14185B35167B7 /* api_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = api_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA113D0446584A1EB33C50DD /* /Users/jfpoole/Projects/cmark/src/iterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iterator.h; path = src/iterator.h; sourceTree = SOURCE_ROOT; };
+		CB8D1FD982534F9F9DD2CF38 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = ext_scanners.re; path = extensions/ext_scanners.re; sourceTree = SOURCE_ROOT; };
+		CCC8E22B9DAC46128E957796 /* /Users/jfpoole/Projects/cmark/src/cmark.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmark.c; path = src/cmark.c; sourceTree = SOURCE_ROOT; };
+		CDCD9221E1F045E682F74C49 /* libcmark-gfmextensions_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcmark-gfmextensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE796FD40A56489E9C04B45E /* /Users/jfpoole/Projects/cmark/src/houdini.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = houdini.h; path = src/houdini.h; sourceTree = SOURCE_ROOT; };
+		D32EE565FEB545ADA40B886B /* /Users/jfpoole/Projects/cmark/src/cmark.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmark.c; path = src/cmark.c; sourceTree = SOURCE_ROOT; };
+		D3BB64C4894548238F43B681 /* cmark-gfm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cmark-gfm"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FC1EC804504AC6B01641EC /* /Users/jfpoole/Projects/cmark/src/html.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = html.c; path = src/html.c; sourceTree = SOURCE_ROOT; };
+		D426F56DA09142EDB062A392 /* /Users/jfpoole/Projects/cmark/src/scanners.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = scanners.c; path = src/scanners.c; sourceTree = SOURCE_ROOT; };
+		D69B331166E343C4B6F51D4F /* /Users/jfpoole/Projects/cmark/src/man.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = man.c; path = src/man.c; sourceTree = SOURCE_ROOT; };
+		D8746594682F463F8DC98DF0 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmark_ctype.c; path = src/cmark_ctype.c; sourceTree = SOURCE_ROOT; };
+		D9049974BCC841BEADBD5F6C /* /Users/jfpoole/Projects/cmark/src/scanners.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = scanners.c; path = src/scanners.c; sourceTree = SOURCE_ROOT; };
+		DBB4086160F141D192E85DA8 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_href_e.c; path = src/houdini_href_e.c; sourceTree = SOURCE_ROOT; };
+		DCD6540DF89B41B8BF7E0BBA /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DD05FF5A461D4553A6905991 /* /Users/jfpoole/Projects/cmark/src/render.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = render.c; path = src/render.c; sourceTree = SOURCE_ROOT; };
+		E16C29156450473BBBEB8855 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = syntax_extension.c; path = src/syntax_extension.c; sourceTree = SOURCE_ROOT; };
+		E18C7E56D2224CA8A3722DC9 /* /Users/jfpoole/Projects/cmark/src/inlines.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = inlines.h; path = src/inlines.h; sourceTree = SOURCE_ROOT; };
+		E898C42EF4D74232B2F48AF1 /* /Users/jfpoole/Projects/cmark/src/utf8.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = utf8.c; path = src/utf8.c; sourceTree = SOURCE_ROOT; };
+		EBC19A9961564258A0EC8072 /* /Users/jfpoole/Projects/cmark/src/node.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node.h; path = src/node.h; sourceTree = SOURCE_ROOT; };
+		EC61E659664A491D8CD00990 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = houdini_html_u.c; path = src/houdini_html_u.c; sourceTree = SOURCE_ROOT; };
+		ECFFDD5E41664A449006C0C7 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cmark_ctype.h; path = src/cmark_ctype.h; sourceTree = SOURCE_ROOT; };
+		ED975AA488804DD8B4BE8B08 /* libcmark-gfm_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcmark-gfm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA5E9AB0DB34DACA240D976 /* /Users/jfpoole/Projects/cmark/src/arena.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = arena.c; path = src/arena.c; sourceTree = SOURCE_ROOT; };
+		F1E00F94ABC14E02A5A8FBDD /* /Users/jfpoole/Projects/cmark/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F2462C6FB0E140AE9421A7C3 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = syntax_extension.h; path = src/syntax_extension.h; sourceTree = SOURCE_ROOT; };
+		F53D6B33C4054CE6AEBE3D63 /* libcmark-gfm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libcmark-gfm.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC81B7CEC364128A5FA95B5 /* /Users/jfpoole/Projects/cmark/src/plugin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = plugin.h; path = src/plugin.h; sourceTree = SOURCE_ROOT; };
+		FEE0598E1D944F11AF172EEC /* /Users/jfpoole/Projects/cmark/src/buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = buffer.h; path = src/buffer.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0784AB2E68C14023AEA63CE5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		224434D429564C708E7755A5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				0784AB2E68C14023AEA63CE5 /* CMake Rules */,
+				748818522BA64F0589B0413F /* /Users/jfpoole/Projects/cmark/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		28C3BE0B929F47698D7B1A06 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				80999C3A269F4A46B0E2DC83 /* /Users/jfpoole/Projects/cmark/api_test/harness.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2D2BCD7122F1479692C0E13B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EAC5700A93A4FC588A6C58C /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */,
+				96397C0112BF4748A9915A3B /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */,
+				4A586C100381443287FE2004 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */,
+				5C4C05E5375E4D95BE27A62C /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */,
+				07D222D52E29422C9A07655C /* /Users/jfpoole/Projects/cmark/extensions/table.c */,
+				2BADBF969C1C4C7C975B075A /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		33F8248B52D347CF8CB7006B /* libcmark-gfmextensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D2BCD7122F1479692C0E13B /* Source Files */,
+				4A0CE1DAAF8F413A8024E178 /* Header Files */,
+				A130BD3FEFD24EE7B54EB459 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */,
+				7FD7C99C708045EDAAF59D48 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */,
+			);
+			name = "libcmark-gfmextensions";
+			sourceTree = "<group>";
+		};
+		42F4889A85DB40BDA296D4EA /* libcmark-gfm */ = {
+			isa = PBXGroup;
+			children = (
+				4B41104742534F39A89D0A02 /* Source Files */,
+				64CC1941326B45D0AE16A4FA /* Header Files */,
+				DCD6540DF89B41B8BF7E0BBA /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */,
+				C094D7AA98BC434B9D019DA2 /* /Users/jfpoole/Projects/cmark/src/scanners.re */,
+			);
+			name = "libcmark-gfm";
+			sourceTree = "<group>";
+		};
+		4A0CE1DAAF8F413A8024E178 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D2F8A5EAA9C40E5A4B3477F /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4B41104742534F39A89D0A02 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDA5E9AB0DB34DACA240D976 /* /Users/jfpoole/Projects/cmark/src/arena.c */,
+				3E0675161C0D4CE3B925C57B /* /Users/jfpoole/Projects/cmark/src/blocks.c */,
+				B8ECE9DBFF9B444699788FE7 /* /Users/jfpoole/Projects/cmark/src/buffer.c */,
+				CCC8E22B9DAC46128E957796 /* /Users/jfpoole/Projects/cmark/src/cmark.c */,
+				48B18C05E18441A487CAD818 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */,
+				B8A13C75412C4969BE3C3C20 /* /Users/jfpoole/Projects/cmark/src/commonmark.c */,
+				8A4AD428625D4EB899AC5707 /* /Users/jfpoole/Projects/cmark/src/footnotes.c */,
+				DBB4086160F141D192E85DA8 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */,
+				AB7706A046A54DA48E4B612A /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */,
+				1E29AFFAC8B64C21BE8ED448 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */,
+				2EA22BD4202C46CE9E9B8B03 /* /Users/jfpoole/Projects/cmark/src/html.c */,
+				B31B661375AF4898AE8F8C49 /* /Users/jfpoole/Projects/cmark/src/inlines.c */,
+				C24662246970463D92E76694 /* /Users/jfpoole/Projects/cmark/src/iterator.c */,
+				2895633D07D14ED481C4A707 /* /Users/jfpoole/Projects/cmark/src/latex.c */,
+				81D29655C70241D78172BB37 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */,
+				B11F49AE265C44FCA5572E39 /* /Users/jfpoole/Projects/cmark/src/man.c */,
+				4A6808D8748D4FC9AF6CA1ED /* /Users/jfpoole/Projects/cmark/src/map.c */,
+				B7D97DF7362641E081995E7C /* /Users/jfpoole/Projects/cmark/src/node.c */,
+				9D4059FB61784365871517AD /* /Users/jfpoole/Projects/cmark/src/plaintext.c */,
+				3CB7756DB0254907BF6E90D1 /* /Users/jfpoole/Projects/cmark/src/plugin.c */,
+				B8BBCCEC4C254481A90E9C35 /* /Users/jfpoole/Projects/cmark/src/references.c */,
+				941C92B27737403F8E6776B5 /* /Users/jfpoole/Projects/cmark/src/registry.c */,
+				26C02D861AEA4115ABC762C0 /* /Users/jfpoole/Projects/cmark/src/render.c */,
+				D9049974BCC841BEADBD5F6C /* /Users/jfpoole/Projects/cmark/src/scanners.c */,
+				E16C29156450473BBBEB8855 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */,
+				AFD4A55793CC4C0DAD4E9762 /* /Users/jfpoole/Projects/cmark/src/utf8.c */,
+				528491D27CC0426592DB5CB3 /* /Users/jfpoole/Projects/cmark/src/xml.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5DE614416F7B4570B8D4836D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		64CC1941326B45D0AE16A4FA /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BC633D7C9E44D58B19D3FC /* /Users/jfpoole/Projects/cmark/src/buffer.h */,
+				87E270BDD1BB424886AD0B3A /* /Users/jfpoole/Projects/cmark/src/chunk.h */,
+				35CD4EE4508E4115B5A6D8D5 /* /Users/jfpoole/Projects/cmark/src/cmark.h */,
+				5FFE8A513A204E3AA2A113BF /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */,
+				8821A5CA4B1F42B2B374802B /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */,
+				503DC139AEFA48A0A42AAA01 /* /Users/jfpoole/Projects/cmark/src/footnotes.h */,
+				CE796FD40A56489E9C04B45E /* /Users/jfpoole/Projects/cmark/src/houdini.h */,
+				E18C7E56D2224CA8A3722DC9 /* /Users/jfpoole/Projects/cmark/src/inlines.h */,
+				CA113D0446584A1EB33C50DD /* /Users/jfpoole/Projects/cmark/src/iterator.h */,
+				17317D91E31C4A6FBA7ED9E4 /* /Users/jfpoole/Projects/cmark/src/map.h */,
+				EBC19A9961564258A0EC8072 /* /Users/jfpoole/Projects/cmark/src/node.h */,
+				C4B9650AE9BE44B2A5037722 /* /Users/jfpoole/Projects/cmark/src/parser.h */,
+				C2256DD135A3490FB4508359 /* /Users/jfpoole/Projects/cmark/src/plugin.h */,
+				148E7B41973946469FAA67E5 /* /Users/jfpoole/Projects/cmark/src/references.h */,
+				83AB3C75EB694A2BA442E00E /* /Users/jfpoole/Projects/cmark/src/registry.h */,
+				C35D53753BB4420E80034601 /* /Users/jfpoole/Projects/cmark/src/render.h */,
+				17DE47A4469E4D88B9EC27E2 /* /Users/jfpoole/Projects/cmark/src/scanners.h */,
+				12E5A12AAD54481C98C7F37E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */,
+				AF17C14950004596996ED90C /* /Users/jfpoole/Projects/cmark/src/utf8.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		69582D7B27D9453E8D6C06C2 = {
+			isa = PBXGroup;
+			children = (
+				224434D429564C708E7755A5 /* ALL_BUILD */,
+				AD07386A49264130A4B50476 /* ZERO_CHECK */,
+				7D79510E30A94EA9930B9F39 /* libcmark-gfm_static */,
+				42F4889A85DB40BDA296D4EA /* libcmark-gfm */,
+				8D78BDB249954F1AAA6F38C5 /* cmark-gfm */,
+				847FFF588E5D47D3AE38E81D /* libcmark-gfmextensions_static */,
+				33F8248B52D347CF8CB7006B /* libcmark-gfmextensions */,
+				8FA3A7D3CAB94DE998E0738D /* api_test */,
+				F3B098A9284F42B7AF50BEBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77BF555D813E42B18076B7E2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0602CAE6AFCD4FFFB942090A /* /Users/jfpoole/Projects/cmark/src/arena.c */,
+				1E911BD3D7FA41C990A322D7 /* /Users/jfpoole/Projects/cmark/src/blocks.c */,
+				6492132496E04BCC9EFA8D23 /* /Users/jfpoole/Projects/cmark/src/buffer.c */,
+				D32EE565FEB545ADA40B886B /* /Users/jfpoole/Projects/cmark/src/cmark.c */,
+				D8746594682F463F8DC98DF0 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */,
+				BA803D4064CB45EFB835734A /* /Users/jfpoole/Projects/cmark/src/commonmark.c */,
+				AB5EF30BF4D548D68A778F8C /* /Users/jfpoole/Projects/cmark/src/footnotes.c */,
+				AC696BF8A50944A191CEFAE9 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */,
+				AAFC0C81D5A34BCD86416200 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */,
+				EC61E659664A491D8CD00990 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */,
+				D3FC1EC804504AC6B01641EC /* /Users/jfpoole/Projects/cmark/src/html.c */,
+				B00B1FDE1AD9435AB5F69485 /* /Users/jfpoole/Projects/cmark/src/inlines.c */,
+				1C5295F8A69E4D82AB09F167 /* /Users/jfpoole/Projects/cmark/src/iterator.c */,
+				6BCAAA92434C4F408E23AD43 /* /Users/jfpoole/Projects/cmark/src/latex.c */,
+				9AD55FB2A3ED44C4B12B0D11 /* /Users/jfpoole/Projects/cmark/src/linked_list.c */,
+				D69B331166E343C4B6F51D4F /* /Users/jfpoole/Projects/cmark/src/man.c */,
+				7FEB593E1E3947429D12F66D /* /Users/jfpoole/Projects/cmark/src/map.c */,
+				89A231C5C2434FABAD743C30 /* /Users/jfpoole/Projects/cmark/src/node.c */,
+				633C29EDF7644309AA5707A6 /* /Users/jfpoole/Projects/cmark/src/plaintext.c */,
+				BD93057A2A8C481798365752 /* /Users/jfpoole/Projects/cmark/src/plugin.c */,
+				16C9BBC74BA1458E926956BE /* /Users/jfpoole/Projects/cmark/src/references.c */,
+				89353E30DCB14A78AF09A31A /* /Users/jfpoole/Projects/cmark/src/registry.c */,
+				DD05FF5A461D4553A6905991 /* /Users/jfpoole/Projects/cmark/src/render.c */,
+				D426F56DA09142EDB062A392 /* /Users/jfpoole/Projects/cmark/src/scanners.c */,
+				1F2A27A7CCC34C978B93264E /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */,
+				E898C42EF4D74232B2F48AF1 /* /Users/jfpoole/Projects/cmark/src/utf8.c */,
+				BF529A18D6F24DCD97A7E86D /* /Users/jfpoole/Projects/cmark/src/xml.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7D79510E30A94EA9930B9F39 /* libcmark-gfm_static */ = {
+			isa = PBXGroup;
+			children = (
+				77BF555D813E42B18076B7E2 /* Source Files */,
+				9C44F85F3B9B44A486B73B48 /* Header Files */,
+				52694A47DD274A8690B826F8 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */,
+				6BE6C2BA1C0E4CA487AD8DE7 /* /Users/jfpoole/Projects/cmark/src/scanners.re */,
+			);
+			name = "libcmark-gfm_static";
+			sourceTree = "<group>";
+		};
+		847FFF588E5D47D3AE38E81D /* libcmark-gfmextensions_static */ = {
+			isa = PBXGroup;
+			children = (
+				FF8F9BC061B144769469E572 /* Source Files */,
+				F9E3A2294D994C1AB256F5F1 /* Header Files */,
+				1D0371199B19460BAABC5523 /* /Users/jfpoole/Projects/cmark/extensions/CMakeLists.txt */,
+				CB8D1FD982534F9F9DD2CF38 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.re */,
+			);
+			name = "libcmark-gfmextensions_static";
+			sourceTree = "<group>";
+		};
+		8D78BDB249954F1AAA6F38C5 /* cmark-gfm */ = {
+			isa = PBXGroup;
+			children = (
+				C8D18F9E0C15465B9B0A29C9 /* Source Files */,
+				0C3E714B59B745459BBCDB05 /* /Users/jfpoole/Projects/cmark/src/CMakeLists.txt */,
+			);
+			name = "cmark-gfm";
+			sourceTree = "<group>";
+		};
+		8FA3A7D3CAB94DE998E0738D /* api_test */ = {
+			isa = PBXGroup;
+			children = (
+				BED65B096FD74D8EA1CC4D92 /* Source Files */,
+				28C3BE0B929F47698D7B1A06 /* Header Files */,
+				1AD29C7F69AD425F98C63B09 /* /Users/jfpoole/Projects/cmark/api_test/CMakeLists.txt */,
+			);
+			name = api_test;
+			sourceTree = "<group>";
+		};
+		9C44F85F3B9B44A486B73B48 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0598E1D944F11AF172EEC /* /Users/jfpoole/Projects/cmark/src/buffer.h */,
+				2604021A7E4E4A5E8289DA7F /* /Users/jfpoole/Projects/cmark/src/chunk.h */,
+				BFBBF4848D7B4CA6B20A46B7 /* /Users/jfpoole/Projects/cmark/src/cmark.h */,
+				ECFFDD5E41664A449006C0C7 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.h */,
+				0F05190F48B843B49B6DB991 /* /Users/jfpoole/Projects/cmark/src/cmark_extension_api.h */,
+				3DC494FB7FFC4E4FBF743CCD /* /Users/jfpoole/Projects/cmark/src/footnotes.h */,
+				69F78D85D0274B11A3FD12A7 /* /Users/jfpoole/Projects/cmark/src/houdini.h */,
+				465927A4A2134A578DFCB2A2 /* /Users/jfpoole/Projects/cmark/src/inlines.h */,
+				236AEA7A23104074B8F40638 /* /Users/jfpoole/Projects/cmark/src/iterator.h */,
+				7291F39F78E84E989A91F06B /* /Users/jfpoole/Projects/cmark/src/map.h */,
+				B9DBF6CF40CC46CCBCFC0066 /* /Users/jfpoole/Projects/cmark/src/node.h */,
+				34016438AEDC4632AB60C996 /* /Users/jfpoole/Projects/cmark/src/parser.h */,
+				FDC81B7CEC364128A5FA95B5 /* /Users/jfpoole/Projects/cmark/src/plugin.h */,
+				9F11EA3F63974B2C9EAF2D5C /* /Users/jfpoole/Projects/cmark/src/references.h */,
+				3708011F06924106A6597BA3 /* /Users/jfpoole/Projects/cmark/src/registry.h */,
+				9F5765BA69324E978889C19F /* /Users/jfpoole/Projects/cmark/src/render.h */,
+				61A1D20DBEA2437F83C59681 /* /Users/jfpoole/Projects/cmark/src/scanners.h */,
+				F2462C6FB0E140AE9421A7C3 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.h */,
+				5AFAE42F5C5C46CA8C8B994E /* /Users/jfpoole/Projects/cmark/src/utf8.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		AD07386A49264130A4B50476 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				5DE614416F7B4570B8D4836D /* CMake Rules */,
+				F1E00F94ABC14E02A5A8FBDD /* /Users/jfpoole/Projects/cmark/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		BED65B096FD74D8EA1CC4D92 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C3D03211E884BD4B76402BC /* /Users/jfpoole/Projects/cmark/api_test/cplusplus.cpp */,
+				9B996B97CA6A48DE92624AE6 /* /Users/jfpoole/Projects/cmark/api_test/harness.c */,
+				9891D3362BB343E0ADEF18FA /* /Users/jfpoole/Projects/cmark/api_test/main.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C8D18F9E0C15465B9B0A29C9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				789D24374DC84EF2A5D37215 /* /Users/jfpoole/Projects/cmark/src/main.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F3B098A9284F42B7AF50BEBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3BB64C4894548238F43B681 /* cmark-gfm */,
+				F53D6B33C4054CE6AEBE3D63 /* libcmark-gfm */,
+				ED975AA488804DD8B4BE8B08 /* libcmark-gfm_static */,
+				0AE09FA4724247ACA3546E2F /* libcmark-gfmextensions */,
+				CDCD9221E1F045E682F74C49 /* libcmark-gfmextensions_static */,
+				C7D9FA5883E14185B35167B7 /* api_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9E3A2294D994C1AB256F5F1 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4383F3DF454C4EE79DB123FE /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FF8F9BC061B144769469E572 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				16FCC5A62D1745E987ABF483 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */,
+				04DA1FEDB0EA42CA94256B08 /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */,
+				B3F81480BB5043979D1C63BB /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */,
+				2AFB10BD6F034196B3D2CD42 /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */,
+				39A9CBBDF2F344299253A6D5 /* /Users/jfpoole/Projects/cmark/extensions/table.c */,
+				106344C7FCFC42768781ACED /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		895F3A33545740F9894B6D5C /* api_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BDC93F8121469AB0194B86 /* Build configuration list for PBXNativeTarget "api_test" */;
+			buildPhases = (
+				54518D56D1994597A30F1352 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39FED4A47F74388A478117A /* PBXTargetDependency */,
+				173C9F6734484CB1A53188A6 /* PBXTargetDependency */,
+				DC700F75E9154495933AAFF1 /* PBXTargetDependency */,
+			);
+			name = api_test;
+			productName = api_test;
+			productReference = C7D9FA5883E14185B35167B7 /* api_test */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D15D026EA1B4566AA670CDC /* libcmark-gfmextensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0954ECD415740B287812F0A /* Build configuration list for PBXNativeTarget "libcmark-gfmextensions" */;
+			buildPhases = (
+				EC2C61DD0C90499DBAE90F8C /* Sources */,
+				EEA21819786C406BB8E3BFD3 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBB6689857904CC0AF64E31D /* PBXTargetDependency */,
+				34A3C93F6B04464FB6DFF54B /* PBXTargetDependency */,
+			);
+			name = "libcmark-gfmextensions";
+			productName = "libcmark-gfmextensions";
+			productReference = 0AE09FA4724247ACA3546E2F /* libcmark-gfmextensions */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8D6C96B75AEE4B6CA7C41761 /* libcmark-gfmextensions_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261D12C45B0C4C498858ED15 /* Build configuration list for PBXNativeTarget "libcmark-gfmextensions_static" */;
+			buildPhases = (
+				137207CA95E842E596B9E804 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E45254D55A41E584C9D3EC /* PBXTargetDependency */,
+			);
+			name = "libcmark-gfmextensions_static";
+			productName = "libcmark-gfmextensions_static";
+			productReference = CDCD9221E1F045E682F74C49 /* libcmark-gfmextensions_static */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4DA973286394349A62F2727 /* libcmark-gfm_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AB658C955774DC992FDB427 /* Build configuration list for PBXNativeTarget "libcmark-gfm_static" */;
+			buildPhases = (
+				FDEDC4C400704E018BBBF3F4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B05413475414AD68633B2C1 /* PBXTargetDependency */,
+			);
+			name = "libcmark-gfm_static";
+			productName = "libcmark-gfm_static";
+			productReference = ED975AA488804DD8B4BE8B08 /* libcmark-gfm_static */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BFC407E4191F45B1B855DBE1 /* libcmark-gfm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7D843C2CB8431FBB48171B /* Build configuration list for PBXNativeTarget "libcmark-gfm" */;
+			buildPhases = (
+				5FB2DF1E1D384C53B4D8A7AF /* Sources */,
+				D3A861A97E284E819C7A7DC2 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF42057880D549C082E056C0 /* PBXTargetDependency */,
+			);
+			name = "libcmark-gfm";
+			productName = "libcmark-gfm";
+			productReference = F53D6B33C4054CE6AEBE3D63 /* libcmark-gfm */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C8EDA32DE486476BAD3B6F95 /* cmark-gfm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4260332512841969C500BAD /* Build configuration list for PBXNativeTarget "cmark-gfm" */;
+			buildPhases = (
+				3CD5BBD81AA84BB7816F371A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1FB3D95F224648BDF15F4C /* PBXTargetDependency */,
+				422F71CEF6344DF9B2AC46AA /* PBXTargetDependency */,
+				5AEE3F8807F1415A9F69801B /* PBXTargetDependency */,
+			);
+			name = "cmark-gfm";
+			productName = "cmark-gfm";
+			productReference = D3BB64C4894548238F43B681 /* cmark-gfm */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25B7871B739477B85FD6B81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 96C60092B4D24DD28473628F /* Build configuration list for PBXProject "cmark" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				FA5856E7BB594D1795438C29 /* Debug */,
+				1129B76D362342098E1245D0 /* Release */,
+				653D91F24B994E65BBCC53C7 /* MinSizeRel */,
+				BB01D42DDC6540A3A871F999 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 69582D7B27D9453E8D6C06C2;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				2A907DEAD02143C3A87EDC11 /* ALL_BUILD */,
+				F0D9BBD2722D48369F04B33A /* RUN_TESTS */,
+				E869CD91A73A4ACEB46C984F /* ZERO_CHECK */,
+				F7B1E9CCD43447BA8C638713 /* install */,
+				C8EDA32DE486476BAD3B6F95 /* cmark-gfm */,
+				BFC407E4191F45B1B855DBE1 /* libcmark-gfm */,
+				A4DA973286394349A62F2727 /* libcmark-gfm_static */,
+				8D15D026EA1B4566AA670CDC /* libcmark-gfmextensions */,
+				8D6C96B75AEE4B6CA7C41761 /* libcmark-gfmextensions_static */,
+				895F3A33545740F9894B6D5C /* api_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ECB79762F8B45E586220BB6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos -f /Users/jfpoole/Projects/cmark/macos/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7ED151A6C3FB41368A3D6177 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		981EABDA57B6423F8EC56669 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B7D691BF212F4E248D9F3592 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos -f /Users/jfpoole/Projects/cmark/macos/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BBB21F081D814B7CA911EAA6 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C7B8890384C540B2A4189548 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos -f /Users/jfpoole/Projects/cmark/macos/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D3A861A97E284E819C7A7DC2 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos/src -f /Users/jfpoole/Projects/cmark/macos/src/CMakeScripts/libcmark-gfm_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EEA21819786C406BB8E3BFD3 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos/extensions -f /Users/jfpoole/Projects/cmark/macos/extensions/CMakeScripts/libcmark-gfmextensions_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F032F8F0EF2F4838A059EFDF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F2B2A3C885054557A667CA5E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/jfpoole/Projects/cmark/macos -f /Users/jfpoole/Projects/cmark/macos/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		137207CA95E842E596B9E804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B599A04641C4527B75B4257 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */,
+				9EC97F546B504F409DA84D3B /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */,
+				F56CB101B8854BEA9736E6C0 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */,
+				36B7ECE584384B25A8CBC65A /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */,
+				B458D0B474B149BE880564BE /* /Users/jfpoole/Projects/cmark/extensions/table.c */,
+				EAAC30A666EC4DC589B6E718 /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD5BBD81AA84BB7816F371A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7508FB173B7542129471A0BA /* /Users/jfpoole/Projects/cmark/src/main.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54518D56D1994597A30F1352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2462E70EF7C74BC1A0A0D12C /* /Users/jfpoole/Projects/cmark/api_test/cplusplus.cpp */,
+				0D60191412F047558E9EED48 /* /Users/jfpoole/Projects/cmark/api_test/harness.c */,
+				F67A1FC1D6E942E397489542 /* /Users/jfpoole/Projects/cmark/api_test/main.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB2DF1E1D384C53B4D8A7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE92C163D8124B72A9674E09 /* /Users/jfpoole/Projects/cmark/src/arena.c */,
+				1F0349DC7493467D89181290 /* /Users/jfpoole/Projects/cmark/src/blocks.c */,
+				DCF72698E8AF49D58BC80368 /* /Users/jfpoole/Projects/cmark/src/buffer.c */,
+				5E0CC96A29764197B44ED243 /* /Users/jfpoole/Projects/cmark/src/cmark.c */,
+				68F28119DACE4DA1922ED06A /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */,
+				B065B5713CB240BFB0097EAC /* /Users/jfpoole/Projects/cmark/src/commonmark.c */,
+				A0BC2DCDB4944E58972027D8 /* /Users/jfpoole/Projects/cmark/src/footnotes.c */,
+				C7EF5B5F46D447C9B868CE1E /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */,
+				3BD828C197144D81933EAD02 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */,
+				10C5E42121BA41509B930AD2 /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */,
+				CE99B28ED2464BADBA1FC73B /* /Users/jfpoole/Projects/cmark/src/html.c */,
+				0D12F1B9FE9444EEA74AD2E0 /* /Users/jfpoole/Projects/cmark/src/inlines.c */,
+				93A08688C0EE4320A63D34D0 /* /Users/jfpoole/Projects/cmark/src/iterator.c */,
+				E7B2DBA451844AFB8A4988EB /* /Users/jfpoole/Projects/cmark/src/latex.c */,
+				855706F85AB54570B37D722A /* /Users/jfpoole/Projects/cmark/src/linked_list.c */,
+				6D40E84CB58543C39F0CFB66 /* /Users/jfpoole/Projects/cmark/src/man.c */,
+				24F3F130E22E4AC58B157C3C /* /Users/jfpoole/Projects/cmark/src/map.c */,
+				66BE57E1DCFD473BB3E4201D /* /Users/jfpoole/Projects/cmark/src/node.c */,
+				D9CAA44DB35149A1A8A53677 /* /Users/jfpoole/Projects/cmark/src/plaintext.c */,
+				3B868644CAAF4B2C9C348EB8 /* /Users/jfpoole/Projects/cmark/src/plugin.c */,
+				BFFE9EAE84904092B0C0289C /* /Users/jfpoole/Projects/cmark/src/references.c */,
+				EBD4291117704FF3860D87C7 /* /Users/jfpoole/Projects/cmark/src/registry.c */,
+				C49E7676374B41848A52F9B6 /* /Users/jfpoole/Projects/cmark/src/render.c */,
+				C36A4BBC483449259C25FD58 /* /Users/jfpoole/Projects/cmark/src/scanners.c */,
+				B8193C88E477476B82A7C248 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */,
+				57EED1AD361645B98C9B0D5F /* /Users/jfpoole/Projects/cmark/src/utf8.c */,
+				2B06697E9B814348826EDC28 /* /Users/jfpoole/Projects/cmark/src/xml.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2C61DD0C90499DBAE90F8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A2FD3DED544EBF8E5D76C9 /* /Users/jfpoole/Projects/cmark/extensions/autolink.c */,
+				0CB88D8A252D4AD6B763A1D0 /* /Users/jfpoole/Projects/cmark/extensions/core-extensions.c */,
+				5B7C4365E8654F3F9E802C00 /* /Users/jfpoole/Projects/cmark/extensions/ext_scanners.c */,
+				9B18F0F7CD054C8786F59DF8 /* /Users/jfpoole/Projects/cmark/extensions/strikethrough.c */,
+				D2F2928BFDE54859899DCEBE /* /Users/jfpoole/Projects/cmark/extensions/table.c */,
+				41C0CD8F733543949A8382FE /* /Users/jfpoole/Projects/cmark/extensions/tagfilter.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEDC4C400704E018BBBF3F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44EC63959A94DEB8399EC93 /* /Users/jfpoole/Projects/cmark/src/arena.c */,
+				56446300483F4744B7A432B2 /* /Users/jfpoole/Projects/cmark/src/blocks.c */,
+				7B09005820044302BF7AE680 /* /Users/jfpoole/Projects/cmark/src/buffer.c */,
+				0FEFB91705D141D3AC05D6CF /* /Users/jfpoole/Projects/cmark/src/cmark.c */,
+				F8E786ABF4E3446FB67CB0B2 /* /Users/jfpoole/Projects/cmark/src/cmark_ctype.c */,
+				CEB781B2C8C24EEC8345BB00 /* /Users/jfpoole/Projects/cmark/src/commonmark.c */,
+				E45067258F37405B87117CAA /* /Users/jfpoole/Projects/cmark/src/footnotes.c */,
+				4212E1FABEAA436AB5BA81A0 /* /Users/jfpoole/Projects/cmark/src/houdini_href_e.c */,
+				809BD4931ABB4024AC61FF23 /* /Users/jfpoole/Projects/cmark/src/houdini_html_e.c */,
+				97DB609EB968457FB215865A /* /Users/jfpoole/Projects/cmark/src/houdini_html_u.c */,
+				9BAB1CBC2D8C40EF8F383E5D /* /Users/jfpoole/Projects/cmark/src/html.c */,
+				59AA6469361841B5808C3872 /* /Users/jfpoole/Projects/cmark/src/inlines.c */,
+				DBA222AA0C394FDF9A13C042 /* /Users/jfpoole/Projects/cmark/src/iterator.c */,
+				46A0A703C4C947BD803DD54C /* /Users/jfpoole/Projects/cmark/src/latex.c */,
+				7BAC23777A4E45489E7B0D7D /* /Users/jfpoole/Projects/cmark/src/linked_list.c */,
+				2854697D2E8A49D5AD07DC3F /* /Users/jfpoole/Projects/cmark/src/man.c */,
+				7A5F0A9B5C274EBF8211B230 /* /Users/jfpoole/Projects/cmark/src/map.c */,
+				FE502193C4F54D93820F999C /* /Users/jfpoole/Projects/cmark/src/node.c */,
+				905F01EFC14D444D8C0526CD /* /Users/jfpoole/Projects/cmark/src/plaintext.c */,
+				02919C33003C48A8A1EF4359 /* /Users/jfpoole/Projects/cmark/src/plugin.c */,
+				6C86D4F016AD48CBB7DFABB3 /* /Users/jfpoole/Projects/cmark/src/references.c */,
+				9E5162B388A349B6BF22C055 /* /Users/jfpoole/Projects/cmark/src/registry.c */,
+				CA4473B2614E4A3C8F37C497 /* /Users/jfpoole/Projects/cmark/src/render.c */,
+				063A7553B71A4441A7F36E29 /* /Users/jfpoole/Projects/cmark/src/scanners.c */,
+				7E32683DC0C74C0F97ADB546 /* /Users/jfpoole/Projects/cmark/src/syntax_extension.c */,
+				DF26CE14D9E24A49A1FB5814 /* /Users/jfpoole/Projects/cmark/src/utf8.c */,
+				F573ECB972AB4A58878C7879 /* /Users/jfpoole/Projects/cmark/src/xml.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E45254D55A41E584C9D3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = 9C3A2104392540A887EE5F09 /* PBXContainerItemProxy */;
+		};
+		10C722F99B0244689F4AA42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 895F3A33545740F9894B6D5C /* api_test */;
+			targetProxy = 065CD844CD104C1F928A636F /* PBXContainerItemProxy */;
+		};
+		173C9F6734484CB1A53188A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D15D026EA1B4566AA670CDC /* libcmark-gfmextensions */;
+			targetProxy = FC9C8C81F8684C4788F1F1E8 /* PBXContainerItemProxy */;
+		};
+		1F7201129F7F4828B0879FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D6C96B75AEE4B6CA7C41761 /* libcmark-gfmextensions_static */;
+			targetProxy = D242E9DBA3AD4AA6B84AA35A /* PBXContainerItemProxy */;
+		};
+		24B3BEA9481C4F6B99A7DC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A907DEAD02143C3A87EDC11 /* ALL_BUILD */;
+			targetProxy = 6D30C46FDCE24F33B7B2656E /* PBXContainerItemProxy */;
+		};
+		34A3C93F6B04464FB6DFF54B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = 961498C03CE5434682C10B2C /* PBXContainerItemProxy */;
+		};
+		422F71CEF6344DF9B2AC46AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D15D026EA1B4566AA670CDC /* libcmark-gfmextensions */;
+			targetProxy = 9EE85C6532E14C84BE317AFA /* PBXContainerItemProxy */;
+		};
+		4BF513C604CA4C85B5C0A159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8EDA32DE486476BAD3B6F95 /* cmark-gfm */;
+			targetProxy = 1F202F2F38294622A0A02BF7 /* PBXContainerItemProxy */;
+		};
+		4C1FB3D95F224648BDF15F4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC407E4191F45B1B855DBE1 /* libcmark-gfm */;
+			targetProxy = DC9F6B199E4F43E696FFB549 /* PBXContainerItemProxy */;
+		};
+		5AEE3F8807F1415A9F69801B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = 14F6B6099DF247A2A1AB7CC1 /* PBXContainerItemProxy */;
+		};
+		61121E3DE65E4E93A50303BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D15D026EA1B4566AA670CDC /* libcmark-gfmextensions */;
+			targetProxy = 42BCA43AD58B4CBD9D95D66B /* PBXContainerItemProxy */;
+		};
+		8B05413475414AD68633B2C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = 48FE36E35D834F62A55E8B95 /* PBXContainerItemProxy */;
+		};
+		C2F9B919C76349CB9496CE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DA973286394349A62F2727 /* libcmark-gfm_static */;
+			targetProxy = 031990B13632486695500948 /* PBXContainerItemProxy */;
+		};
+		D39FED4A47F74388A478117A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC407E4191F45B1B855DBE1 /* libcmark-gfm */;
+			targetProxy = 532EEDD955E442F2857589D1 /* PBXContainerItemProxy */;
+		};
+		DC700F75E9154495933AAFF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = BA3F4DF0E043408E8DB6B6AC /* PBXContainerItemProxy */;
+		};
+		DF08A7F803DB4348A01C9363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC407E4191F45B1B855DBE1 /* libcmark-gfm */;
+			targetProxy = EC90FC4F359C49AF8B0F4244 /* PBXContainerItemProxy */;
+		};
+		E14766D930524FE689BC185D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = 9B18918CA68542F7A56BC6A1 /* PBXContainerItemProxy */;
+		};
+		EBB6689857904CC0AF64E31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC407E4191F45B1B855DBE1 /* libcmark-gfm */;
+			targetProxy = 73FF5746CC374DBC835FDE3F /* PBXContainerItemProxy */;
+		};
+		FF42057880D549C082E056C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E869CD91A73A4ACEB46C984F /* ZERO_CHECK */;
+			targetProxy = D8C75CB75863467B853CD0F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0395A3FF0D2B40CF82734D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic    -DCMARK_DEBUG_NODES -DDEBUG -fPIC -fvisibility=hidden -DCMARK_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		189B32E954584C9DA1EF2894 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/build;
+			};
+			name = MinSizeRel;
+		};
+		1B11715585504D43A5B1F40A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfmextensions_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /Users/jfpoole/Projects/cmark/macos/src/Debug;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic    -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/src/Debug/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		295A7C90A0854C0B8E4B3F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/Debug /Users/jfpoole/Projects/cmark/macos/src/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic    -DCMARK_DEBUG_NODES -DDEBUG -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/Debug/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/Debug/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2FE0A0D3D2794C028EA9B6C6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3265AE5EDA9645AEA4B2959C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3451C9EF60C5459198CEC47B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfm_EXPORTS,"'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic        -DNDEBUG -fPIC -fvisibility=hidden  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3C9A2409B8554AB387276BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3CA8D17C24CF4085B350065E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfm_EXPORTS,"'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -fvisibility=hidden  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		447841EF0ECB45438A00BD82 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4824069EEE954ACD8C6DA9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/build;
+			};
+			name = Release;
+		};
+		4E8E568CAB074A3A936BB033 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic        -DNDEBUG -fPIC -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4F6E77F3DE9A46AB9FEA4EBE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfm_EXPORTS,"'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -fvisibility=hidden  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4FDBECE36A1D4E2EB9992B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfm_EXPORTS,"'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic    -DCMARK_DEBUG_NODES -DDEBUG -fPIC -fvisibility=hidden  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		508E16F9927840BCA6D2C639 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfmextensions_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic        -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		51A557DDFDB44353A91A35C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5283433BAD2F42FEBFB10FE0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/MinSizeRel /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/MinSizeRel/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5452721B1A49479E85518EDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5DC7CD3D3DBB4454B9D6B0FE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -fvisibility=hidden -DCMARK_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		61A6F37ADB5047929158429A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6646965C691741B398455A4E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfmextensions_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		673026DFD80C42F2BCF50BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic    -fPIC -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		67851DB8D5C04CF38E00B0F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		709057E7B5D042DC976E0A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		80156DBFCB8D44C39995CDD6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8A00BBA5E2504D588D717A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/build;
+			};
+			name = Debug;
+		};
+		8BBA20E5539E41A69E418D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/Debug /Users/jfpoole/Projects/cmark/macos/src/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -std=c99 -pedantic -D_BSD_SOURCE -D_POSIX_SOURCE     ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/Debug/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/Debug/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = api_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/api_test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9A2BD104AA4C43F990C12D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.28.3;
+				DYLIB_CURRENT_VERSION = 0.28.3;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",libcmark_gfmextensions_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = /Users/jfpoole/Projects/cmark/macos/src/Release;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/src/Release/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions.0.28.3.gfm.12";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A2DBBF32BDEB4ED5802CFCDB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A3D2BE70DE9E4BCABF472AD6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/RelWithDebInfo /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic        -DNDEBUG -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/RelWithDebInfo/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A43BFE12FD014AB5B627DF37 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/extensions/.,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfmextensions";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/extensions;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		ABDAF0BFF4D14D3BADB3ADF6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/RelWithDebInfo /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -std=c99 -pedantic -D_BSD_SOURCE -D_POSIX_SOURCE        -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/RelWithDebInfo/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/RelWithDebInfo/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = api_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/api_test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B008554A5BAC4B76977FA4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BB1786F8240C47C29576A55E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C3057DC7B7EA4AE497F2FB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -fPIC -fvisibility=hidden -DCMARK_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C58050B337994C99A56EF857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C85AE1A0CDD7493DAD881FB6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CA67C9901D844861B1D748F1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic        -DNDEBUG -fPIC -fvisibility=hidden -DCMARK_STATIC_DEFINE  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E2CDC9E70C204E0DBBF3C62A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/MinSizeRel /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -std=c99 -pedantic -D_BSD_SOURCE -D_POSIX_SOURCE     -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/MinSizeRel/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/MinSizeRel/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = api_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/api_test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EFCB679EE9DC447F9428310E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F52E056519714753A85AE172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'LIBDIR=\"/Users/jfpoole/Projects/cmark/macos\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src/.,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/Release /Users/jfpoole/Projects/cmark/macos/src/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -Wno-unused-parameter -std=c99 -pedantic     -DNDEBUG -DCMARK_STATIC_DEFINE -DCMARKEXTENSIONS_STATIC_DEFINE  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/Release/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/Release/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cmark-gfm";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F60037E0DF77408BBE35DEC5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/build;
+			};
+			name = RelWithDebInfo;
+		};
+		FA2C037B638F4BD086D7372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jfpoole/Projects/cmark/src,/Users/jfpoole/Projects/cmark/macos/src,/Users/jfpoole/Projects/cmark/macos/extensions);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/jfpoole/Projects/cmark/macos/extensions/Release /Users/jfpoole/Projects/cmark/macos/src/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = " -Wall -Wextra -std=c99 -pedantic -D_BSD_SOURCE -D_POSIX_SOURCE     -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/jfpoole/Projects/cmark/macos/extensions/Release/libcmark-gfmextensions.0.28.3.gfm.12.dylib /Users/jfpoole/Projects/cmark/macos/src/Release/libcmark-gfm.0.28.3.gfm.12.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = api_test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos/api_test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FCEB5AAB93934DAB997D68C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/jfpoole/Projects/cmark/macos;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07BDC93F8121469AB0194B86 /* Build configuration list for PBXNativeTarget "api_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BBA20E5539E41A69E418D4B /* Debug */,
+				FA2C037B638F4BD086D7372D /* Release */,
+				E2CDC9E70C204E0DBBF3C62A /* MinSizeRel */,
+				ABDAF0BFF4D14D3BADB3ADF6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		261D12C45B0C4C498858ED15 /* Build configuration list for PBXNativeTarget "libcmark-gfmextensions_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673026DFD80C42F2BCF50BA0 /* Debug */,
+				67851DB8D5C04CF38E00B0F1 /* Release */,
+				A43BFE12FD014AB5B627DF37 /* MinSizeRel */,
+				4E8E568CAB074A3A936BB033 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		318AE6B240C24A0BBF924AA1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51A557DDFDB44353A91A35C3 /* Debug */,
+				FCEB5AAB93934DAB997D68C5 /* Release */,
+				2FE0A0D3D2794C028EA9B6C6 /* MinSizeRel */,
+				447841EF0ECB45438A00BD82 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3DC5E7ABE1A94A0B83157345 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9A2409B8554AB387276BED /* Debug */,
+				61A6F37ADB5047929158429A /* Release */,
+				80156DBFCB8D44C39995CDD6 /* MinSizeRel */,
+				C85AE1A0CDD7493DAD881FB6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A7D843C2CB8431FBB48171B /* Build configuration list for PBXNativeTarget "libcmark-gfm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDBECE36A1D4E2EB9992B76 /* Debug */,
+				3CA8D17C24CF4085B350065E /* Release */,
+				4F6E77F3DE9A46AB9FEA4EBE /* MinSizeRel */,
+				3451C9EF60C5459198CEC47B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4AB658C955774DC992FDB427 /* Build configuration list for PBXNativeTarget "libcmark-gfm_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0395A3FF0D2B40CF82734D5A /* Debug */,
+				C3057DC7B7EA4AE497F2FB12 /* Release */,
+				5DC7CD3D3DBB4454B9D6B0FE /* MinSizeRel */,
+				CA67C9901D844861B1D748F1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6B6BC2F0F4A54D84ACA3D672 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58050B337994C99A56EF857 /* Debug */,
+				5452721B1A49479E85518EDC /* Release */,
+				A2DBBF32BDEB4ED5802CFCDB /* MinSizeRel */,
+				BB1786F8240C47C29576A55E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96C60092B4D24DD28473628F /* Build configuration list for PBXProject "cmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A00BBA5E2504D588D717A64 /* Debug */,
+				4824069EEE954ACD8C6DA9D2 /* Release */,
+				189B32E954584C9DA1EF2894 /* MinSizeRel */,
+				F60037E0DF77408BBE35DEC5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0954ECD415740B287812F0A /* Build configuration list for PBXNativeTarget "libcmark-gfmextensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B11715585504D43A5B1F40A /* Debug */,
+				9A2BD104AA4C43F990C12D9C /* Release */,
+				6646965C691741B398455A4E /* MinSizeRel */,
+				508E16F9927840BCA6D2C639 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1E55D66673D44169FAA872D /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709057E7B5D042DC976E0A2A /* Debug */,
+				B008554A5BAC4B76977FA4F1 /* Release */,
+				EFCB679EE9DC447F9428310E /* MinSizeRel */,
+				3265AE5EDA9645AEA4B2959C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4260332512841969C500BAD /* Build configuration list for PBXNativeTarget "cmark-gfm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295A7C90A0854C0B8E4B3F3C /* Debug */,
+				F52E056519714753A85AE172 /* Release */,
+				5283433BAD2F42FEBFB10FE0 /* MinSizeRel */,
+				A3D2BE70DE9E4BCABF472AD6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E25B7871B739477B85FD6B81 /* Project object */;
+}
